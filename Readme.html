@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+import webbrowser
+
+# Contenido HTML que quieres mostrar
+html_content = """<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -41,3 +44,11 @@
   </p>
 </body>
 </html>
+"""
+
+# Guardar el HTML en un archivo
+with open("pagina.html", "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+# Abrir el archivo en el navegador por defecto
+webbrowser.open("pagina.html")
